@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|center"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/ysf_action_bar_height"
+    android:orientation="vertical"
+    android:paddingRight="10dp" >
+
+    <com.qiyukf.unicorn.ui.StylableTextView
+        android:id="@+id/action_bar_right_clickable_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/emojiLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+              android:visibility="visible">
+
+    <View
+        android:id="@+id/top_divider_line"
+        style="@style/ysf_horizontal_light_thin_divider"
+        android:layout_alignParentTop="true"/>
+
+
+    <View android:id="@+id/bottom_divider_line"
+          style="@style/ysf_horizontal_light_thin_divider"
+          android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout_scr_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@id/bottom_divider_line"
+        />
+
+    <com.qiyukf.unicorn.ui.ViewPagerFixed
+        android:id="@+id/emotion_icon_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_below="@id/top_divider_line"
+        android:layout_above="@id/layout_scr_bottom"/>
+</RelativeLayout>

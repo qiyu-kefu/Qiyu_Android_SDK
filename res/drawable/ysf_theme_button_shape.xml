@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/ysf_button_color_state_list" />
+    <corners android:topLeftRadius="@dimen/ysf_input_send_button_corner"
+             android:topRightRadius="@dimen/ysf_input_send_button_corner"
+             android:bottomRightRadius="@dimen/ysf_input_send_button_corner"
+             android:bottomLeftRadius="@dimen/ysf_input_send_button_corner"/>
+    <padding android:left="@dimen/ysf_input_send_button_padding_hor"
+             android:top="@dimen/ysf_input_send_button_padding_ver"
+             android:right="@dimen/ysf_input_send_button_padding_hor"
+             android:bottom="@dimen/ysf_input_send_button_padding_ver"/>
+</shape>  

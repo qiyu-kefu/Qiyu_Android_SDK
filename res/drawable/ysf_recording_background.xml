@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ysf_recording_background_color" />
+    <corners android:topLeftRadius="@dimen/ysf_input_send_button_corner"
+             android:topRightRadius="@dimen/ysf_input_send_button_corner"
+             android:bottomRightRadius="@dimen/ysf_input_send_button_corner"
+             android:bottomLeftRadius="@dimen/ysf_input_send_button_corner"/>
+</shape>

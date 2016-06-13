@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.MsgThumbImageView
+        android:id="@+id/message_item_thumb_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/ysf_empty"
+        android:gravity="center"
+        android:padding="0dip"
+        android:scaleType="centerCrop"/>
+
+    <include layout="@layout/nim_message_item_thumb_progress_bar_text"/>
+
+    <ImageView
+        android:id="@+id/message_item_thumb_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/ysf_empty"
+        android:gravity="center"
+        android:padding="0dip"
+        android:scaleType="fitXY"
+        />
+
+</FrameLayout>

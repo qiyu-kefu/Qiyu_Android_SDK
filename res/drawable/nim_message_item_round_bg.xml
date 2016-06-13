@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ysf_gray_eaeaea" />
+    <corners android:topLeftRadius="@dimen/ysf_message_thumb_corner"
+             android:topRightRadius="@dimen/ysf_message_thumb_corner"
+             android:bottomRightRadius="@dimen/ysf_message_thumb_corner"
+             android:bottomLeftRadius="@dimen/ysf_message_thumb_corner"/>
+</shape>  

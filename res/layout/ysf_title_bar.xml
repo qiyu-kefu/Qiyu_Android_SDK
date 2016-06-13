@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ysf_title_bar"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ysf_title_bar_height"
+                android:paddingBottom="1dp"
+                android:background="@drawable/ysf_title_bar_bg"
+                android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/ysf_title_bar_back_area"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="6dp"
+        android:paddingRight="2dp"
+        android:background="@drawable/ysf_title_bar_back_selector"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ysf_title_bar_back_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/ysf_title_bar_back_icon"
+            />
+
+        <TextView
+            android:id="@+id/ysf_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/ysf_title_bar_text_size"
+            android:textColor="@color/ysf_title_bar_title_color"
+            android:lines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ysf_title_bar_actions_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ysf_title_bar_back_area"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"/>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+    <TextView
+        android:id="@+id/message_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/ysf_bubble_time_layout_margin_bottom"
+        android:layout_marginTop="@dimen/ysf_bubble_time_layout_margin_top"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:textColor="@color/ysf_notification_text"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/message_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_item_time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/ysf_bubble_name_layout_margin_bottom"
+        android:layout_marginLeft="7dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxWidth="160dip"
+        android:singleLine="true"
+        android:textColor="@color/ysf_gray_999999"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.HeadImageView
+        app:ysf_siv_border_width="1dp"
+        app:ysf_siv_border_color="@android:color/white"
+        android:id="@+id/message_item_portrait_left"
+        android:layout_width="@dimen/ysf_avatar_size"
+        android:layout_height="@dimen/ysf_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/message_item_nickname"
+        android:layout_marginRight="@dimen/ysf_bubble_head_margin_horizontal"
+        android:visibility="gone"/>
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.HeadImageView
+        app:ysf_siv_border_width="1dp"
+        app:ysf_siv_border_color="@android:color/white"
+        android:id="@+id/message_item_portrait_right"
+        android:layout_width="@dimen/ysf_avatar_size"
+        android:layout_height="@dimen/ysf_avatar_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/message_item_time"
+        android:layout_marginLeft="@dimen/ysf_bubble_head_margin_horizontal"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/message_item_nickname"
+        android:layout_toLeftOf="@id/message_item_portrait_right"
+        android:layout_toRightOf="@id/message_item_portrait_left">
+
+        <LinearLayout
+            android:id="@+id/message_item_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/message_item_progress"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/nim_progress_small_white"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/message_item_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/nim_ic_failed"
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/message_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

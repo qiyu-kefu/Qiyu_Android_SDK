@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+def getGitVersion() {
+    try {
+        return 'git rev-parse --short HEAD'.execute().text.trim()
+    } catch (Throwable th) {
+        return "";
+    }
+}
+
+/**
+ * rootProject.ext is defined in root project. Please refer to the demo source.
+ *
+ * ext {<br>
+ *     minSdkVersion = 9
+ *     targetSdkVersion = 20
+ *     compileSdkVersion = 21
+ *     buildToolsVersion = "21.1.1"
+ *}<br>
+ */
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    publishNonDefault true
+
+    defaultConfig {
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        buildConfigField "String", "GIT_REVISION", "\"${getGitVersion()}\""
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.0.1'
+    compile fileTree(dir: 'libs', include: ['*.jar'], exclude: ['android-support-v4.jar'])
+}

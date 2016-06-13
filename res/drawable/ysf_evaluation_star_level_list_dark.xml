@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ysf_evaluation_star_disabled_dark"
+        android:maxLevel="0" />
+    <item
+        android:drawable="@drawable/ysf_evaluation_star_enabled_dark"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/ysf_evaluation_star_complete_dark"
+        android:maxLevel="2" />
+</level-list>

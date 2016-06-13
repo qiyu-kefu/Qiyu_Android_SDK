@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qiyukf.nim.uikit.session.module.input.MessageRootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/messageActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_tips_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/ysf_tips_background_fff9e2"
+            android:gravity="center"
+            android:textColor="@color/ysf_tips_text_c08722"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/message_activity_list_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <com.qiyukf.nim.uikit.session.helper.MsgBkImageView
+                android:id="@+id/message_activity_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ysf_gray_f8f8f8" />
+
+            <com.qiyukf.nim.uikit.common.ui.listview.MessageListView
+                android:id="@+id/messageListView"
+                style="@style/ysf_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/ysf_audio_recording_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ysf_recording_background"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/ysf_audio_recording_animation_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:id="@+id/ysf_audio_amplitude_panel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/ysf_recording_view_mic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ysf_recording_mic" />
+
+                        <ImageView
+                            android:id="@+id/ysf_amplitude_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/ysf_recording_view_mic"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@id/ysf_recording_view_mic"
+                            android:src="@drawable/ysf_amplitude_list" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ysf_recording_count_down_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="-5dp"
+                        android:layout_marginTop="-15dp"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="80dp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ysf_audio_record_end_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ysf_audio_record_end"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/ysf_recording_cancel_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ysf_recording_cancel"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ysf_cancel_recording_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ysf_audio_recording_animation_view"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="@string/ysf_audio_record_cancel_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <include layout="@layout/nim_message_activity_bottom_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_audio_mode_tips_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ysf_play_audio_mode_background"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/play_audio_mode_tips_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/play_audio_mode_tips_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/play_audio_mode_tips_indicator"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</com.qiyukf.nim.uikit.session.module.input.MessageRootLayout>

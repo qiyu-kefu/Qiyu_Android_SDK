@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ysf_empty"></string>
+    <string name="ysf_ok">确定</string>
+    <string name="ysf_cancel">取消</string>
+    <string name="ysf_i_know">知道了</string>
+
+    <!-- session -->
+    <string name="ysf_input_panel_photo">图 片</string>
+    <string name="ysf_input_panel_video">视 频</string>
+    <string name="ysf_input_panel_location">位 置</string>
+    <string name="ysf_input_panel_take">拍 摄</string>
+    <string name="ysf_input_message_hint_normal">输入消息…</string>
+    <string name="ysf_compatible_image_format_tips">请选择JPG PNG BMP GIF格式的图片文件</string>
+    <string name="ysf_re_download_message">重新下载?</string>
+    <string name="ysf_re_send_has_blank">重 发</string>
+    <string name="ysf_re_send_message">重发消息?</string>
+    <string name="ysf_copy_has_blank">复 制</string>
+    <string name="ysf_delete_has_blank">删 除</string>
+    <string name="ysf_save">保存</string>
+    <string name="ysf_save_to_device">保存到手机</string>
+    <string name="ysf_picture_save_fail">图片保存失败</string>
+    <string name="ysf_picture_save_to">图片已保存到手机</string>
+    <string name="ysf_send">&#160;发送&#160;</string>
+    <string name="ysf_unknown_title">无法显示该内容</string>
+    <string name="ysf_unknown_desc">客户端版本不支持该内容</string>
+    <string name="ysf_requesting_staff">正在连接客服</string>
+    <string name="ysf_send_message_disallow_as_requesting">请等待连接客服成功后，再发送消息</string>
+    <string name="ysf_retry_connect">重新连接</string>
+    <string name="ysf_some_error_happened">连接客服失败，您可以尝试</string>
+    <string name="ysf_service_offline">当前客服不在线，如需帮助请留言</string>
+    <string name="ysf_request_timeout">网络连接失败，请稍后再试</string>
+    <string name="ysf_staff_assigned">%1$s为您服务</string>
+    <string name="ysf_staff_assigned_with_group">已连接至%1$s，%2$s将为您服务</string>
+    <string name="ysf_service_in_queue">正在排队，您的前面还有%1$d个人，请稍等…</string>
+    <string name="ysf_service_product_invalid">当前没有客服在线</string>
+    <string name="ysf_evaluation">评价</string>
+    <string name="ysf_evaluation_complete">已评价</string>
+    <string name="ysf_evaluation_tips">请对我们的服务做出评价</string>
+    <string name="ysf_evaluation_satisfied">满意</string>
+    <string name="ysf_evaluation_dissatisfied">不满意</string>
+    <string name="ysf_evaluating">正在评价…</string>
+    <string name="ysf_evaluation_fail">评价失败，请重试</string>
+    <string name="ysf_evaluation_result">您对我们的服务评价为：&lt;b&gt;%s&lt;/b&gt;</string>
+    <string name="ysf_evaluation_complete_tips">您已完成对当前会话评价，请勿重复评价</string>
+    <string name="ysf_request_staff">人工客服</string>
+
+    <!-- 语音 -->
+    <string name="ysf_audio_record_touch_to_record">按住 说话</string>
+    <string name="ysf_audio_record_up_to_complete">松开  结束</string>
+    <string name="ysf_audio_record_move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="ysf_audio_record_time_is_up_tips">说话时间已到%1$d秒</string>
+    <string name="ysf_audio_record_sdcard_not_exist_error">请插入SD卡</string>
+    <string name="ysf_audio_record_error">录音失败，请重试</string>
+    <string name="ysf_audio_record_init_failed">初始化录音失败</string>
+    <string name="ysf_audio_record_timer_default">00:00</string>
+    <string name="ysf_audio_record_cancel_tip">松开手指，取消发送</string>
+    <string name="ysf_audio_record_reach_max_duration">录音达到最大时间，是否发送？</string>
+    <string name="ysf_audio_play_by_earphone">使用听筒播放</string>
+    <string name="ysf_audio_play_by_speaker">使用扬声器播放</string>
+    <string name="ysf_audio_is_playing_by_earphone">正在使用听筒播放</string>
+    <string name="ysf_audio_current_mode_is_earphone">当前为听筒模式</string>
+    <string name="ysf_audio_current_mode_is_speaker">当前为扬声器模式</string>
+    <string name="ysf_audio_switch_to_speaker">已从听筒切换为扬声器播放</string>
+    <string name="ysf_audio_switch_to_earphone">已从扬声器切换为听筒播放</string>
+
+    <!-- image picker -->
+    <string name="ysf_picker_image_gallery_invalid">您的手机没有图库程序</string>
+    <string name="ysf_picker_image_sdcard_not_enough_error">SD卡被拔出存储空间不足，无法保存此次多媒体消息</string>
+    <string name="ysf_picker_image_choose_from_photo_album">从手机相册选择</string>
+    <string name="ysf_picker_image_waiting_album">正在打开相册，请稍候\u2026</string>
+    <string name="ysf_picker_image_preview">预览</string>
+    <string name="ysf_picker_image_send">发送</string>
+    <string name="ysf_picker_image_folder">相册</string>
+    <string name="ysf_picker_image_album_loading">相册加载中…</string>
+    <string name="ysf_picker_image_album_empty">相册中没有图片！</string>
+    <string name="ysf_picker_image_folder_info">共%d张</string>
+    <string name="ysf_picker_image_exceed_max_image_select">最多选择%d张图片！</string>
+    <string name="ysf_picker_image_send_select">完成（%d）</string>
+    <string name="ysf_picker_image_preview_original">发送原图</string>
+    <string name="ysf_picker_image_preview_original_select">发送原图（%s）</string>
+    <string name="ysf_picker_image_error">目前仅支持jpg/png/bmp/gif格式图片的传送</string>
+    <string name="ysf_image_compressed_size">该原始图片大小为: %1$s,</string>
+    <string name="ysf_image_unknown_size">未知大小</string>
+    <string name="ysf_image_send_confirm">是否发送该原始图片？</string>
+    <string name="ysf_image_total_compressed_size">原始图片总大小为: %1$s,</string>
+    <string name="ysf_image_send_bundle_confirm">是否发送这些原始图片？</string>
+    <string name="ysf_image_retake">重拍</string>
+    <string name="ysf_image_show_error">图片显示异常</string>
+    <string name="ysf_image_out_of_memory">内存不足</string>
+    <string name="ysf_image_download_failed">图片下载失败</string>
+
+</resources>
